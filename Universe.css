@@ -1,0 +1,872 @@
+.header1 {
+  font-size: 160px;
+  font-weight: 600;
+  text-shadow: 1px 1px 3px #B9B6B6;
+  color: #eee;
+}
+
+.header2 {
+  font-size: 120px;
+  font-weight: 500;
+  text-shadow: 1px 1px 3px #B9B6B6;
+  color: #B9B6B6;
+  margin-bottom: 0;
+}
+
+.header3 {
+  font-size: 70px;
+  font-weight: 400;
+  color: #163065;
+}
+
+.header4 {
+  font-size: 50px;
+  font-weight: 300;
+  color: #ECF0F1;
+
+
+}
+
+.any-text {
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 40px;
+  color: #122549;
+}
+
+.span {
+
+  color: #B9B6B6;
+  font-weight: 1000;
+}
+
+
+.define-text {
+  max-width: 500px;
+  font-size: 20px;
+  font-weight: 300;
+  color: black;
+}
+
+
+.highlited-text {
+  font-size: 30px;
+  font-weight: 400;
+  color: #fff;
+
+}
+
+.linked-text {
+  font-size: 16px;
+  text-decoration: none;
+  color: #eeba30;
+}
+
+.small-text {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.submit-button {
+  width: 300px;
+  height: 40px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #0F3E61;
+  background: #BCD1E1;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 0 3px darkblue;
+}
+
+.submit-button:hover {
+  transition: 0.5s;
+  color: white;
+  background: #33518E;
+}
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  background-color: #000;
+}
+
+#main {
+  background-image: url("backimg3.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+/* logo style*/
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 255, 0.2);
+}
+
+header img {
+  height: 70px;
+}
+
+header h4 {
+  margin: 6px;
+  float: right;
+  animation: on-off 2.5s linear 0s infinite;
+}
+
+/* Nav style*/
+.nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav-list li {
+  margin-right: 30px;
+  padding: 8px;
+  border: solid 2px #eeba30;
+  border-top: none;
+  border-radius: 5px;
+  transition: 0.5s;
+  font-family: cursive;
+}
+
+.nav-list li:hover {
+  background-color: #eeba30;
+  border-radius: 10px;
+}
+
+.nav-list li:hover a {
+  color: white;
+}
+
+.nav-list li:last-child a {
+  font-size: 160%;
+  color: white;
+}
+
+.nav-list li:last-child {
+  background: #eeba30;
+  margin-left: 50px;
+  box-shadow: 1px 1px 2px white;
+  opacity: 0.9;
+}
+
+.nav-list li:last-child:hover {
+  opacity: 1;
+}
+
+.light {
+  background: #eeba30;
+  box-shadow: 1px 1px 2px white;
+
+}
+
+.light a {
+  color: white;
+}
+
+/* welcome*/
+
+#welcome img {
+  margin: 50px 50px 0px 0px;
+  border-radius: 20px;
+  height: 350px;
+  float: right;
+  box-shadow: 2px 2px 5px white;
+}
+
+
+
+#welcome p {
+  margin-left: 30px;
+  margin-top: 50px;
+}
+
+
+
+#why-attend {
+  background: linear-gradient(180deg, #000000 0%, #000000 20%, #0d0d26 50%, #121237 80%, #000000 100%);
+  height: 80vh;
+}
+
+#why-attend h2 {
+  margin-top: 0;
+  margin-left: 50px;
+  padding: 30px;
+  color: #B9B6B6;
+
+}
+
+#why-attend p {
+  font-size: 35px;
+  margin-left: 400px;
+  color: rgb(255, 255, 255);
+}
+
+/* questions */
+
+#questions {
+  height: 120vh;
+  background: url("backimg2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#questions h2 {
+  margin-top: 0px;
+  text-align: center;
+}
+
+.fill-form {
+  float: right;
+  margin-right: 130px;
+  padding-bottom: 20px;
+  background-color: rgba(200, 200, 200, 0.6);
+  padding: 5px 30px 15px 50px;
+}
+
+.subform {
+  margin-bottom: 32px;
+}
+
+.input-area {
+  display: block;
+  font-family: Arial;
+  font-size: 110%;
+  margin-top: 4px;
+  width: 300px;
+  height: 30px;
+  background: rgba(200, 200, 200, 0);
+  border: none;
+  outline: none;
+  border-bottom: solid 2px #111;
+
+}
+
+.collect {
+  margin-left: 100px;
+}
+
+.collect h3 {
+  font-weight: 700;
+  color:rgb(110, 110, 110);
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 2px 2px 4px #ffffff;
+}
+
+
+/*footer*/
+
+footer {
+  background-color: black;
+  position: relative;
+}
+
+
+.host {
+  margin-top: 0px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 50px;
+  text-align: center;
+  height: 60vh;
+}
+
+.subhost {
+  margin-right: 180px;
+  font-size: 30px;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  transition: 0.5s;
+}
+
+footer a:hover {
+  color: #eeba30;
+  border-bottom: solid white;
+}
+
+.subhost ul {
+  padding: 0px;
+  margin-top: 30px;
+}
+
+.subhost li {
+  height: 48px;
+  font-size: 18px;
+}
+
+.logo {
+  position: absolute;
+  display: flex;
+  top: 200px;
+}
+
+.logo img {
+  height: 125px;
+}
+
+.copyright {
+  text-align: center;
+  line-height: 30px;
+  background-color: grey;
+  font-size: 18px;
+  opacity: 0.8;
+}
+
+/* solarmain */
+#submain {
+  background-image: url("solarimg1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+/* header solar */
+.solar_main_header {
+  margin-left: px;
+  margin-top: 270px;
+}
+
+.solar_main_header h1 {
+  color: white;
+  margin-bottom: 0;
+
+}
+
+.solar_main_header p {
+  margin-left: 100px;
+}
+
+
+.fill {
+  background: url("i.jfif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/* overview */
+#overview {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  padding-top: 50px;
+}
+
+
+.main-definition {
+
+  padding: auto;
+
+  margin: auto
+}
+
+.main-definition p {
+  color: #00bcd4;
+  text-shadow: 2px 2px 3px black;
+}
+
+.title-text {
+  color: #ffc107;
+  font-weight: bolder;
+}
+
+.overviewinfo {
+  margin-bottom: 0px;
+  padding-bottom: 50px;
+}
+
+.overviewinfo dd {
+  width: 50%;
+  color: white;
+}
+
+.image1 {
+  margin-right: -100px;
+  width: 500px;
+  float: right;
+  border: inset 5px;
+  box-shadow: 2px 2px 2px grey;
+  border-radius: 20px;
+}
+
+.image2 {
+  margin-right: -100px;
+  height: 300px;
+  float: right;
+  border: inset 5px;
+  box-shadow: 2px 2px 2px grey;
+  border-radius: 20px;
+}
+
+
+/* dwarfplanets */
+#dwarfplanets {
+  display: none;
+}
+
+#dwarfplanets h2 {
+  text-align: center;
+  color: black;
+  margin-bottom: 30px;
+  margin-top: 0;
+  padding-top: 55px;
+}
+
+/* join us */
+.join-page {
+  background: url("dark2.3.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 115vh;
+}
+
+
+.join-form {
+  float: right;
+  margin-right: 100px;
+  margin-top: 60px;
+  margin-bottom: 0px;
+  padding: 20px;
+  background-color: rgba(200, 200, 200, 0.8);
+  box-shadow: 0 0 3px white;
+  border: none;
+}
+
+.join-us {
+  margin-left: 20px;
+}
+
+.join-description h2,
+.join-description p {
+  margin-top: 0;
+  margin-bottom: 0px;
+}
+
+.rules {
+  margin-left: 20px;
+}
+
+
+.rules li {
+  color: #eee;
+}
+
+/*black hole css*/
+#mainblack {
+  background-image: url("black3.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+
+}
+
+/*blackhole*/
+
+
+#blackhole {
+  background-color: rgb(0, 0, 0);
+  overflow: hidden;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 50px;
+  display: block;
+
+}
+
+
+/* about */
+#about {
+  padding-top: 10px;
+  background-color: #C1C1C1;
+  height: 13vh;
+  box-shadow: -5px -5px 15px grey;
+  text-shadow: 0 0 2px black;
+}
+
+#about hgroup {
+  display: flex;
+  justify-content: center;
+}
+
+
+#about h2 {
+  position: relative;
+  margin-right: 50px;
+  margin-bottom: 10px;
+  font-variant: small-caps;
+  border-right: solid 1px grey;
+  padding-right: 8px;
+}
+
+#about a {
+  text-decoration: none;
+  color: black;
+}
+
+
+
+
+
+
+
+
+
+.deff h1 {
+  font-size: 90px;
+  margin-left: 350px;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  color: #111;
+  display: flex;
+
+}
+
+.deff h1 span {
+  display: table-cell;
+  margin: 0;
+  padding: 0;
+  animation: text 2.25s linear infinite;
+}
+
+.deff h1 span:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.deff h1 span:nth-child(2) {
+  animation-delay: 0.25s;
+}
+
+.deff h1 span:nth-child(3) {
+  animation-delay: 0.5s;
+}
+
+.deff h1 span:nth-child(4) {
+  animation-delay: 0.75s;
+}
+
+.deff h1 span:nth-child(5) {
+  animation-delay: 1s;
+}
+
+.deff h1 span:nth-child(6) {
+  animation-delay: 1.25s;
+}
+
+.deff h1 span:nth-child(7) {
+  animation-delay: 1.5s;
+}
+
+.deff h1 span:nth-child(8) {
+  animation-delay: 1.75s;
+}
+
+.deff h1 span:nth-child(9) {
+  animation-delay: 2s;
+}
+
+.defff h2 {
+  font-size: 40px;
+  color: white;
+  margin-left: 100px;
+}
+
+.defff dd {
+  font-size: 15px;
+  font-family: Arial;
+  color: white;
+  line-height: 25px;
+  margin-left: 150px;
+}
+
+@keyframes text {
+
+  0%,
+  100% {
+    color: #fff;
+    filter: blur(2px);
+    text-shadow: 0 0 10px #a52a2a,
+      0 0 20px #a52a2a,
+      0 0 40px #a52a2a,
+      0 0 80px #a52a2a,
+      0 0 120px #a52a2a,
+      0 0 200px #a52a2a,
+      0 0 300px #a52a2a,
+      0 0 400px #a52a2a,
+      0 0 500px #a52a2a;
+  }
+
+  5%,
+  95% {
+    color: #111;
+    filter: blur(0px);
+    text-shadow: none;
+  }
+}
+
+.picture1 {
+  margin-right: 30px;
+  background-color: grey;
+  margin-top: 20px;
+  width: 400px;
+  float: right;
+  border: inset 5px;
+  box-shadow: 2px 2px 2px grey;
+  border-radius: 0px;
+  height: 520px;
+}
+
+.picture1 img {
+  width: 390px;
+  position: center;
+  height: 400px;
+}
+
+.picture1 h1 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 0px;
+  text-transform: none;
+  letter-spacing: 0px;
+  color: #111;
+  display: flex;
+}
+
+.picture1 p {
+  margin-top: 0px;
+
+}
+
+.picture2 {
+  margin-right: 30px;
+  background-color: grey;
+  margin-top: -90px;
+  width: 400px;
+  float: right;
+  border: inset 5px;
+  box-shadow: 2px 2px 2px grey;
+  border-radius: 0px;
+  height: 470px;
+}
+
+.picture2 img {
+  width: 390px;
+  position: center;
+  height: 400px;
+}
+
+.picture2 p {
+  margin-top: 0px;
+
+}
+
+
+
+/*white Hole*/
+#whitehole {
+  width: 100%;
+  display: none;
+  height: 300vh;
+  background: linear-gradient(135deg, #1F2A44, #4A6E91, #A3B9D1, #F1F9FE);
+  padding: 40px;
+}
+
+#whitehole h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 4em;
+  color: #A3B9D1;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 4px;
+  padding: 20px;
+  margin: 0;
+}
+
+
+
+
+.whatis {
+  margin-left: -40px;
+}
+
+.whatis h2 {
+  margin-left: 100px;
+}
+
+.whatis dd {
+  font-size: 15px;
+  color: black;
+  line-height: 25px;
+  margin-left: 150px;
+  max-width: 600px;
+
+}
+
+.whitevideo {
+
+
+  margin-right: 30px;
+  background-color: grey;
+  margin-top: -200px;
+
+  width: 400px;
+  float: right;
+  border: inset 5px;
+  box-shadow: 2px 2px 2px grey;
+  border-radius: 0px;
+  height: auto;
+
+
+}
+
+
+.white4 {
+  margin-right: 30px;
+  background-color: grey;
+  margin-top: -200px;
+  width: 400px;
+  float: right;
+  border: inset 5px;
+  box-shadow: 2px 2px 2px grey;
+  border-radius: 0px;
+  height: 500px;
+
+}
+
+.white4 img {
+  width: 390px;
+  position: center;
+  height: 400px;
+}
+
+.white4 p {
+  padding: 15px;
+  margin-top: 0px;
+  padding: 10px;
+
+}
+
+.white2 {
+  margin-right: 100px;
+  margin-top: 130px;
+
+}
+
+#forblack {
+  position: absolute;
+  top: 30px;
+  right: 60px;
+  transform: rotate(90deg);
+  display: inline;
+}
+
+#forwhite {
+  position: absolute;
+  top: 30px;
+  right: 70px;
+  transform: rotate(90deg);
+  display: none;
+}
+
+/*follow us*/
+.followus {
+  position: absolute;
+  bottom: 130px;
+  right: 80px;
+
+}
+
+.followus h2 {
+  color: white;
+}
+
+.followus a {
+  padding: 4px;
+}
+
+/* dark energy*/
+.DE {
+  color: darkblue;
+}
+
+.tt {
+  margin-bottom: 200px;
+  margin-top: -400px;
+  margin-left: 600px;
+  font-size: 25px;
+  color: black;
+  background-color: black;
+  border: darkblue solid 3px;
+  border-collapse: collapse;
+
+
+}
+
+.tt,th,td {
+
+  text-align: center;
+  border: darkblue solid 3px;
+  padding: 2px;
+
+}
+
+.tt tr:nth-of-type(even) {
+  background-color: rgb(65, 65, 180);
+  color: black;
+}
+
+.tt tr:nth-of-type(odd) {
+  background-color: grey;
+  color: white;
+}
+
+#mainDark {
+  background-image: url("dark1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+
+}
+
+
+
+
+.design {
+  background-color: grey;
+  padding: 10px;
+  width: 50%;
+  border: #000 solid;
+  border-radius: 30px;
+
+
+}
+
+.design p {
+  color: #eee;
+
+}

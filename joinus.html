@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Universe.css">
+  <link rel="icon" href="logo.png">
+  <title>Join Us</title>
+</head>
+
+<body>
+  <div class="join-page">
+
+    <header>
+      <div>
+        <img src="logo.png" alt="Not found">
+        <h4 class="header4">Space</h4>
+      </div>
+
+      <nav>
+        <ul class="nav-list">
+          <li><a href="index.html" class="linked-text">Home</a></li>
+          <li><a href="blackhole.html" class="linked-text">Space Hole</a></li>
+          <li><a href="solarsystem.html" class="linked-text">Solar System</a></li>
+          <li><a href="darkenergy.html" class="linked-text">Dark Energy</a></li>
+          <li class="light"><a href="joinus.html" class="linked-text">Join Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <form action="#" method="post" onsubmit="return valid_join_form()">
+        <fieldset class="join-form">
+          
+
+          <datalist id="choose">
+            <option value="Space Hole">
+            <option value="Solar System">
+            <option value="Dark Energy">
+            <option value="Space Time">
+            <option value="Supernova">
+          </datalist>
+
+          <div class="subform">
+            <label class="small-text">Full Name <input type="text" name="ln" class="input-area" required id="namevalid"></label>
+          </div>
+
+          <div class="subform">
+            <label class="small-text">Email <input type="email" name="email" class="input-area" required id="emailvalid"></label>
+          </div>
+
+          <div class="subform">
+            <label class="small-text">Birthday <input type="date" name="birthday" class="input-area" required id="birthdayvalid"></label>
+          </div>
+
+          <div class="subform">
+            <label class="small-text">Interest <input type="text" list="choose" name="interest" class="input-area" required></label>
+          </div>
+
+          <input type="submit" name="submit" value="Join Now" class="submit-button">
+        </fieldset>
+      </form>
+
+      <div class="join-description">
+        <div class="join-us">
+          <h2 class="header2">Join Us</h2>
+          <p class="highlited-text">Join our team to stay updated about space and the universe!</p>
+        </div>
+
+        <div class="rules">
+          
+          <ul>
+            <li class="header4">Fill the form</li>
+            <li class="header4">Join the team</li>
+            <li class="header4">Be an active member</li>
+            <li class="header4">Share your information</li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <!-- Success message section -->
+    <div id="success-message" style="display:none;">
+      <h1>Welcome to the Team!</h1>
+      <a href="index.html"><button>Click to return to the home page</button></a>
+    </div>
+
+  </div>
+
+  <footer>
+    <ul class="host">
+      <li class="subhost"><a href="index.html">Home</a></li>
+      <li class="subhost"><a href="index.html#questions">Questions</a></li>
+      <li class="subhost"><a href="index.html">Theories</a>
+        <ul>
+          <li><a href="blackhole.html">Space Hole</a></li>
+          <li><a href="solarsystem.html">Solar System</a></li>
+          <li><a href="darkenergy.html">Dark Energy</a></li>
+        </ul>
+      </li>
+    </ul>
+
+    <div class="logo">
+      <img src="logo.png" alt="Not found">
+      <h1 class="header4">Space</h1>
+    </div>
+
+    <div class="followus">
+      <h2>Follow Us</h2>
+      <a href="#"><img src="facebook.jpg"/></a>
+      <a href="#"><img src="instagram.jpg"/></a>
+      <a href="#"><img src="youtube.jpg"/></a>
+      <a href="#"><img src="twitter.jpg"/></a>
+    </div>
+
+    <div class="copyright">
+      <small><i><strong>copyright &copy; all rights reserved 2025<br>Lebanese University</strong></i></small>
+    </div>
+  </footer>
+
+  <script>
+    function valid_join_form() {
+      let nameinput = document.getElementById('namevalid');
+      let emailinput = document.getElementById('emailvalid');
+      let name_pattern = /^[A-Z][a-z]+\s[a-z]+$/;
+      let email_pattern = /^(\w+\.*)+@(\w+\.)+\w+$/;
+
+      if (nameinput.value.match(name_pattern)) {
+        if (emailinput.value.match(email_pattern)) {
+          if (localStorage.getItem(emailinput.value)) {
+            alert("You are already in the team");
+            return false;
+          }
+          let sure = confirm("Are you sure you want to submit this information?");
+          if (sure) {
+            // Show success message
+            document.getElementById('success-message').style.display = 'block';
+          }
+        } else {
+          alert("Your email is not valid");
+          return false;
+        }
+      } else {
+        alert("Your Full name must be:\nThe first letter is capitalized and there should be a space between your first and last name");
+        return false;
+      }
+
+      localStorage.setItem(emailinput.value, nameinput.value);
+      return false; // Prevent form submission
+    }
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Universe.css">
+  <link rel="icon" href="logo.png">
+  <title>Space</title>
+
+</head>
+
+
+<body>
+  <!--main div-->
+  <div id="main">
+    <!-- header -->
+    <header>
+
+      <div>
+        <img src="logo.png" alt="Not found">
+        <h4 class="header4">Space</h4>
+      </div>
+
+      <nav>
+        <ul class="nav-list">
+          <li class="light">
+            <a href="index.html" class="linked-text">Home</a>
+          </li>
+          <li>
+            <a href="blackhole.html" class="linked-text">Space Hole</a>
+          </li>
+          <li>
+            <a href="solarsystem.html" class="linked-text">Solar System</a>
+          </li>
+          <li>
+            <a href="darkenergy.html" class="linked-text">Dark Energy</a>
+          </li>
+          <li>
+            <a href="joinus.html" class="linked-text">Join Us</a>
+          </li>
+        </ul>
+      </nav>
+
+    </header>
+
+    <main>
+    <!-- welcome --> 
+    <div id="welcome">
+
+      <img id="switch" src="asteroid1.jpg" alt="Not Found">
+      <h1 class="header1">Welcome</h1>
+      <p class="highlited-text">
+      <q>The universe is wider than our views of it.</q>
+      </p>
+
+    </div>
+
+  </div>
+  
+
+
+    <!--why attent-->
+  <div id="why-attend">
+      <h2 class="header2">Why Attend?</h2>
+      <p class="any-text">
+        What is Universe ? <br>
+        Do you like to know about the outer space?<br>
+        What is there and how it works?!<br>
+        So you are in the <span class="span">right place</span>
+      </p>
+
+    </div>
+  
+    
+    <!--questions-->
+  <div id="questions">
+
+      <h2 class="header2">Questions</h2>
+
+
+      <form class="fill-form" action="index.html" method="post" onsubmit="return valid_question_form()">
+
+        <h4 class="header4">Send Message</h4>
+
+        <div class="subform">
+          <label class="small-text">Full Name <input type="text" name="name" class="input-area" id="namevalid" required></label>
+        </div>
+
+
+        <div class="subform">
+          <label class="small-text">Email address <input type="email" name="email" class="input-area"  id="emailvalid" required></label>
+        </div>
+
+        <div class="subform">
+          <label class="small-text">Message <textarea name="questions" rows="8" cols="12" class="input-area" required></textarea></label>
+        </div>
+
+        <div>
+          <input type="submit" name="submit" value="Send" class="submit-button">
+        </div>
+
+        
+      </form>
+
+      
+        <div class="collect">
+          <h3 class="header3">Share your ideas <br>
+             and opinions</h3>
+        </div>
+
+  </div>
+  
+
+    </main>
+
+  <footer>
+
+    <ul class="host">
+      <li class="subhost">
+        <a href="index.html">Home</a>
+      </li>
+
+      <li class="subhost">
+        <a href="index.html#questions">Questions</a>
+      </li>
+
+      <li class="subhost">
+        <a href="index.html">Theories</a>
+        <ul>
+          <li>
+            <a href="blackhole.html">Space Hole</a>
+          </li>
+          <li>
+            <a href="solarsystem.html">Solar System</a>
+          </li>
+          <li>
+            <a href="darkenergy.html">Dark Energy</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <div class="logo">
+      <img src="logo.png" alt="Not found">
+      <h1 class="header4">Space</h1>
+    </div>
+
+    <div class="followus">
+    <h2>follow us</h2>
+    <a href="#"><img src="facebook.jpg"/></a>
+    <a href="#" ><img src="instagram.jpg"></a>
+    <a href="#" ><img src="youtube.jpg"></a>
+    <a href="#" ><img src="twitter.jpg"></a>
+    </div>
+
+    <div class="copyright">
+      <small><i><strong>
+            copyright &copy; all rights are reserved 2025 <br>
+            Lebanese University
+      </strong></i></small>
+    </div>
+
+  </footer>
+
+  <script>
+  var welcome_img = ["asteroid1.jpg","asteroid2.jpg","asteroid3.jpg"];
+  var counter_img = 0;
+  var change_img = document.getElementById('switch');
+  setInterval(change,2000);
+
+  function change(){
+    change_img.src = welcome_img[counter_img++];
+
+    if(counter_img == 3)
+      counter_img = 0;
+  }
+  </script>
+
+  <script>
+
+function valid_question_form() {
+  let nameinput = document.getElementById('namevalid');
+  let emailinput = document.getElementById('emailvalid');
+  let name_pattern = /^[A-Z][a-z]+\s[a-z]+$/;
+  let email_pattern = /^(\w+\.*)+@(\w+\.)+\w+$/;
+
+  if (nameinput.value.match(name_pattern)) {
+    if (emailinput.value.match(email_pattern)) {
+      let sure = confirm("Are you sure you want to send this message?");
+      if (sure) {
+        // Hide the form
+        document.querySelector('.fill-form').style.display = 'none';
+        
+        // Show the success message
+        let successMessage = document.getElementById('success-message');
+        successMessage.style.display = 'block';
+
+        // Optionally style the success message
+        successMessage.style.textAlign = 'center';
+        successMessage.style.backgroundColor = '#4CAF50'; // green background
+        successMessage.style.color = 'white';
+        successMessage.style.padding = '20px';
+        successMessage.style.borderRadius = '10px';
+        successMessage.style.boxShadow = '0px 0px 10px rgba(0,0,0,0.1)';
+        
+        // Optionally apply custom button styles
+        let button = successMessage.querySelector('button');
+        button.style.padding = '10px 20px';
+        button.style.backgroundColor = 'white';
+        button.style.color = '#4CAF50';
+        button.style.border = 'none';
+        button.style.borderRadius = '5px';
+        button.style.cursor = 'pointer';
+      }
+    } else {
+      alert("Your email is not valid");
+      return false;
+    }
+  } else {
+    alert("Your Full name must be:\nThe first letter must be capital\nspace between your first and last name");
+    return false;
+  }
+  return true;
+}
+
+
+  </script>
+
+
+
+</body>
+
+
+</html>
