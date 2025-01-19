@@ -820,7 +820,7 @@ footer a:hover {
   font-size: 25px;
   color: black;
   background-color: black;
-  border: darkblue solid 3px;
+  border: black solid 3px;
   border-collapse: collapse;
 
 
@@ -829,7 +829,7 @@ footer a:hover {
 .tt,th,td {
 
   text-align: center;
-  border: darkblue solid 3px;
+  border: black solid 3px;
   padding: 2px;
 
 }
